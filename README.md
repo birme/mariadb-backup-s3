@@ -19,7 +19,7 @@ Assuming that you have stored the AWS credentials in the secrets `awsaccesskeyid
 ```
 % export OSC_ACCESS_TOKEN=<personal-access-token>
 % osc create birme-mariadb-backup-s3 demo \
-  -o mariaDbUrl="mariadb://root:<rootpwd>@<ip>:<port>/<database>" \
+  -o MariaDbUrl="mariadb://root:<rootpwd>@<ip>:<port>/<database>" \
   -o awsAccessKeyId="{{secrets.awsaccesskeyid}}" \
   -o awsSecretAccessKey="{{secrets.awssecretaccesskey}}" \
   -o awsRegion="eu-north-1" \
